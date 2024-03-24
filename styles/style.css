@@ -1,131 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @media (min-width:768px){
-    .main-titulo{
-        font-size: 1.875rem;
+    h2{
+        font-size: 30px;
+    }
+    .main-produtos{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
     }
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F7F8;
+    font-family: "Poppins", sans-serif;
 }
 
-.header-background{
-    width: 100%;
-    height: 22rem;
-    background-color: rgba(0, 0, 0, 0.932);
-    background-image:url(/assets/bg.png);
+header{
+    background-image: url(/assets/bg.png);
     background-size: cover;
     background-position: center;
-    line-height: 45px;
+    width: 100%;
+    height: 25rem;
 }
 
 .div-background{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    width: 100%;
 }
+    
 
-
-.img-logo{
-    width: 8rem;
+.div-img-logo{
     height: 8rem;
+    width: 8rem;
     border-radius: 100%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.404);
     transition-duration: 0.2s;
 }
 
-.img-logo:hover{
-    scale: 115%;
-}
-
-.logo-titulo{
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-}
-
-.span-endereco{
-    color: white;
-}
-
-.horario{
-    background-color: #4baa10;
-    border-radius: 10px;
-    margin-top: 7px;
-}
-
-.p-horario{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    font-weight: 600;
-
-}
-
-.main-hamb1{
-    display: grid;
-    grid-column: 1;
-}
-
-.div-menu{
-    display: flex;
-    gap: 8px;
-}
-
-.main-titulo{
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-    
-}
-
-.menu-hamb1{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 5px;
-    transition-duration: 300ms;
-}
-
-
-.menu-hamb1:hover{
+.div-img-logo:hover{
     scale: 110%;
-    transform: rotate(2deg);
 }
 
-.menu-titulo-hamb1{
+h1{
+    color: white;
+}
+
+.div-p{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin: 25px;
+}
+
+.span-horario{
+    background-color: #54CC0A;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-.menu-descricao-hamb1{
-    font-size: 15px;
+.main-produtos{
+    display: grid;
+    grid-template-columns: repeat(1, m 1fr);
+    gap: 30px;
+    margin: auto;
+    max-width: 80rem;
+    padding: 0px 8px;
+    margin-bottom: 2rem;
 }
 
-.menu-preco-hamb1{
+.produto{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+.produto:hover{
+    scale: 110%;
+    rotate: -2deg;
+}
+
+.div-produto{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.titulo-produto{
+    font-weight: bold;
+}
+
+.descricao-produto{
+    font-size: 14px;
+
+}
+
+.preco-botao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.preco-produto{
     font-weight: bold;
 }
 
 .button-cart{
-    background-color: black;
-    border-radius: 3px;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 17px;
+    background-color: black;
+    padding: 2px 20px;
+    border-radius: 5px;
 }
 
-.div-descricao-hamb1{
+footer{
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    bottom: 0%;
+    z-index: 40;
     display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    margin-top: 33px;
-   
+    align-items: center;
+    justify-content: center;
+}
+
+.button-footer{
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0px;
+    gap: 20px;
+    font-size: medium;
 }
